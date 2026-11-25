@@ -1,0 +1,21 @@
+//Zona_funciones
+Funcion edad <- Tomar_Edad
+	Definir edad Como Entero
+	Escribir "Ingrese su edad"
+	Leer edad
+FinFuncion
+
+Funcion mensaje <- Crear_Mensaje(edad)
+	Definir mensaje Como Caracter
+	     mensaje="Tienes " +ConvertirATexto(edad)+ " Años"
+FinFuncion
+
+Funcion Mostrar_mensaje(mensaje)
+	Escribir mensaje
+FinFuncion
+
+Algoritmo Edad_Usuario
+	EdadUsuario = Tomar_Edad()
+	Crearmen = Crear_Mensaje(EdadUsuario)
+	         Mostrar_mensaje(Crearmen)
+FinAlgoritmo

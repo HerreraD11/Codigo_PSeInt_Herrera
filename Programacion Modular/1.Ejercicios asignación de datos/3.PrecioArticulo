@@ -1,0 +1,21 @@
+Funcion precio <- DefinirPrecio
+	Definir precio Como Real
+    Escribir "¿Cual es el precio de su articulo?"
+	Leer precio
+FinFuncion
+
+Funcion mensaje <- crea_men (precio)
+    mensaje<- "El precio del artículo es $" + ConvertirATexto(precio)
+
+FinFuncion
+
+Funcion  ver <- mostrarmensaje(mensaje)
+	Escribir mensaje
+FinFuncion
+
+
+Algoritmo PrecioArticulo
+    precio <- DefinirPrecio
+    mensaje <- crea_men(precio)
+    ver <- mostrarmensaje(mensaje)
+FinAlgoritmo

@@ -1,0 +1,33 @@
+Funcion estudiante <- DefinirEstudiante
+    Definir estudiante Como Logico
+    Escribir "¿Es usted estudiante? (Verdadero/Falso)"
+    Leer estudiante
+FinFuncion
+
+Funcion siono<- concluirsiono(estudiante)
+	Definir siono Como Caracter
+	si estudiante= Verdadero Entonces
+		siono= "SI"
+	SiNo
+		siono= "NO"
+	FinSi
+	
+FinFuncion
+
+Funcion mensaje <- crea_men(siono)
+	Definir mensaje Como Caracter
+    mensaje <- "¿Es usted estudiante?: " + siono
+FinFuncion
+
+Funcion ver <- mostrarmensaje(mensaje)
+    Escribir mensaje
+FinFuncion
+
+Algoritmo DatosEstudiante
+
+	
+    estudiante <- DefinirEstudiante
+	siono<- concluirsiono(estudiante)
+    mensaje <- crea_men(siono)
+    ver <- mostrarmensaje(mensaje)
+FinAlgoritmo
