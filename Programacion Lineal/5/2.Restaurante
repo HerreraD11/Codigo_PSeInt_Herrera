@@ -1,0 +1,37 @@
+Algoritmo Restaurante
+	Definir comidas Como Entero
+	Definir total Como Real
+	
+	total<- 0
+	
+	Repetir
+		Escribir "======MENU======"
+		Escribir "1.Hamburguesas - 14.0000"
+		Escribir "2.Salchipapa - 18.000"
+		Escribir "3.Shawarman - 16.000"
+		Escribir "4.CocaCola - 6.000"
+		Escribir "5.Pepsi - 4.000"
+		Escribir "6.Cerrar pedido"
+		Escribir "Selecciona"
+		Leer comidas
+		
+		Segun comidas Hacer
+			1: total<- total+14000
+				Escribir "Hamburguesa agregada"
+			2: total<- total+18000
+				Escribir "Salchipapa agregada"
+			3: total<- total+16000
+				Escribir "Shawarman agregada"
+			4: total<- total+6000
+				Escribir "CocaCola agregada"
+			5: total<- total+4000
+				Escribir "Pepsi agregada"
+			6: Escribir "pedido finalizado"
+			
+		FinSegun
+	Hasta Que comidas = 6
+	Escribir "El total de su compra de comida es :" total
+	Escribir "Muchas gracias por preferirnos"
+	
+	
+FinAlgoritmo

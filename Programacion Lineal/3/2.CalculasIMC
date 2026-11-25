@@ -1,0 +1,41 @@
+Algoritmo CalculasIMC
+	Definir peso Como Real
+	Definir altura Como Real
+	Definir IMC Como Real
+	Definir categoria Como Entero
+	//
+	Escribir "Ingresa tu peso en kilogramos"
+	Leer peso
+	Escribir "Ingresa tu altura en metros"
+	Leer altura
+	
+	si peso <= 0 o altura <= 0 Entonces
+		Escribir "Ingrese valores positivos"
+	SiNo
+		IMC<- peso/(altura*altura)
+		si IMC < 18.5 Entonces
+			categoria<- 1
+		SiNo
+			si IMC < 25 Entonces
+				categoria<-2
+			SiNo
+				si IMC < 30 Entonces
+					categoria<-3
+				SiNo
+					categoria<-4
+				FinSi
+			FinSi
+		FinSi
+		Escribir "Su IMC es de: " IMC
+		Segun categoria Hacer
+			1:
+				Escribir  "Bajo peso"
+			2:
+				Escribir  "Peso normal"
+			3:
+				Escribir  "Sobrepeso"
+			4:
+				Escribir  "Obesidad"
+		FinSegun
+	FinSi
+FinAlgoritmo

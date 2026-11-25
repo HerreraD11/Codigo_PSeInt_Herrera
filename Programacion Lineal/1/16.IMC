@@ -1,0 +1,23 @@
+Algoritmo IMC
+	Definir peso1 Como Real
+	Definir peso2 Como Real
+	Definir altura1 Como Real
+	Definir altura2 Como Real
+	definir IMC1 Como Real
+	Definir IMC2 Como Real
+	//
+	Escribir "Ingrese la altura de la primera persona :"
+	Leer altura1 
+	Escribir "Ingrese peso de la primera persona :"
+	Leer peso1
+	Escribir "Ingrese la altura de la segunda persona :"
+	Leer altura2
+	Escribir "Ingrese peso de la segunda persona :"
+	Leer peso2
+	//
+	IMC1<- peso1 / (altura1*altura1)
+	IMC2<- peso2 / (altura2*altura2)
+	//
+	Escribir "El indice de grasa corporal de la persona 1 es de :" IMC1
+	Escribir "El indice de grasa corporal de la persona 2 es de :" IMC2
+FinAlgoritmo

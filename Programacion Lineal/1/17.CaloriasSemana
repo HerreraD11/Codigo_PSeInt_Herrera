@@ -1,0 +1,36 @@
+Algoritmo CaloriasSemana
+	Definir dia1 Como Real
+	Definir dia2 Como Real
+	Definir dia3 Como Real
+	Definir dia4 Como Real
+    Definir dia5  Como Real
+	Definir dia6 Como Real
+	Definir dia7 Como Real
+	Definir total Como Real
+	
+    Escribir "Calorias del lunes:"
+    Leer dia1
+    Escribir "Calorias del martes:"
+    Leer dia2
+    Escribir "Calorias del miercoles:"
+    Leer dia3
+    Escribir "Calorias del jueves:"
+    Leer dia4
+    Escribir "Calorias del viernes:"
+    Leer dia5
+    Escribir "Calorias del sabado:"
+    Leer dia6
+    Escribir "Calorias del domingo:"
+    Leer dia7
+	
+    total <- dia1 + dia2 + dia3 + dia4 + dia5 + dia6 + dia7
+	
+    Escribir "Calorias del lunes: " dia1
+    Escribir "Calorias del martes: " dia2
+    Escribir "Calorias del miercoles: " dia3
+    Escribir "Calorias del jueves: " dia4
+    Escribir "Calorias del viernes: " dia5
+    Escribir "Calorias del sabado: " dia6
+    Escribir "Calorias del domingo: " dia7
+    Escribir "Total de calorias semanales: " total
+FinAlgoritmo

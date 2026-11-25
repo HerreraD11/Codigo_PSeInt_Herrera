@@ -1,0 +1,80 @@
+Algoritmo Restaurante
+	Definir plato Como Entero
+	Definir bebida Como Entero
+	Definir pago Como Entero
+	Definir precioPlato Como Real
+	Definir precioBebida Como Real
+	Definir subtotal Como Real
+	Definir descuento Como Real
+	Definir total Como Real
+	
+	Escribir "MENU DE RESTAURANTE"
+	Escribir "1. Hamburguesa - $15000"
+	Escribir "2. Pizza - $20000"
+	Escribir "3. Perro caliente - $12000"
+	Escribir "Seleccione un plato:"
+	Leer plato
+	
+	Segun plato Hacer
+		1:
+			precioPlato <- 15000
+		2:
+			precioPlato <- 20000
+		3:
+			precioPlato <- 12000
+		De Otro Modo:
+			precioPlato <- 0
+	FinSegun
+	
+	Escribir "BEBIDAS"
+	Escribir "1. Agua - $2000"
+	Escribir "2. Gaseosa - $4000"
+	Escribir "3. Jugo - $5000"
+	Escribir "Seleccione una bebida:"
+	Leer bebida
+	
+	Segun bebida Hacer
+		1:
+			precioBebida <- 2000
+		2:
+			precioBebida <- 4000
+		3:
+			precioBebida <- 5000
+		De Otro Modo:
+			precioBebida <- 0
+	FinSegun
+	
+	Si precioPlato = 0 O precioBebida = 0 Entonces
+		Escribir "Seleccion no valida"
+	SiNo
+		subtotal <- precioPlato + precioBebida
+		
+		Escribir "METODO DE PAGO"
+		Escribir "1. Efectivo"
+		Escribir "2. Tarjeta de credito"
+		Escribir "3. Cheque"
+		Leer pago
+		
+		Segun pago Hacer
+			1:
+				descuento <- subtotal * 0.10
+			2:
+				descuento <- subtotal * 0.05
+			3:
+				descuento <- 0
+			De Otro Modo:
+				descuento <- -1
+		FinSegun
+		
+		Si descuento < 0 Entonces
+			Escribir "Metodo de pago no valido"
+		SiNo
+			total <- subtotal - descuento
+			
+			Escribir "Subtotal: $", subtotal
+			Escribir "Descuento: $", descuento
+			Escribir "Total a pagar: $", total
+		FinSi
+	FinSi
+
+FinAlgoritmo

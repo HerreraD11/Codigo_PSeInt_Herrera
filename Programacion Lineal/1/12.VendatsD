@@ -1,0 +1,32 @@
+Algoritmo VendatsD
+	Definir d1 Como Real
+	Definir d2 Como Real
+	Definir d3 Como Real
+	Definir d4 Como Real
+	Definir d5 Como Real
+	Definir d6 Como Real
+	Definir d7 Como Real
+	Definir ganancias Como Real
+	//ganacias
+	Escribir "Ingresar las ganancias del Dia 1 :"
+	Leer d1
+	Escribir "Ingresar las ganancias del Dia 2 :"
+	Leer d2
+	Escribir "Ingresar las ganancias del Dia 3 :"
+	Leer d3
+	Escribir "Ingresar las ganancias del Dia 4 :"
+	Leer d4
+	Escribir "Ingresar las ganancias del Dia 5 :"
+	Leer d5
+	Escribir "Ingresar las ganancias del Dia 6 :"
+	Leer d6
+	Escribir "Ingresar las ganancias del Dia 7 :"
+	Leer d7
+	//Formula
+	ganancias<- d1 + d2+ d3 + d4 + d5 + d6 + d7
+	//
+	Escribir "Las ganancias de esta seamana fueron de :" ganancias
+	
+	
+	
+FinAlgoritmo

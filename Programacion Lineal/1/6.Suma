@@ -1,0 +1,27 @@
+Algoritmo Suma
+	// definir los numeros
+	Definir n1 Como Entero;
+	Definir n2 Como Entero;
+	Definir n3 Como Entero;
+	Definir n4 Como Entero;
+	definir n5 Como Entero;
+	Definir result Como Entero
+	// pedir los numeros 
+	Escribir "¿Cual es el primer numero para la suma?"
+	Leer n1
+	Escribir "¿Cual es el segundo numero para la suma?"
+	Leer n2
+	Escribir "¿Cual es el tercer numero para la suma?"
+	Leer n3
+	Escribir "¿Cual es el cuarto numero para la suma?"
+	Leer n4
+	Escribir "¿Cual es el quinto numero para la suma?"
+	Leer n5
+	// P datos
+	result <- n1 + n2 + n3 + n4 + n5;
+	
+	// Resultato de la suma
+	Escribir "El resultado de la suma de los 5 numeros es: " + ConvertirATexto(result);
+	
+	
+FinAlgoritmo

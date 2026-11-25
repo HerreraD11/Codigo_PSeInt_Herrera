@@ -1,0 +1,41 @@
+Algoritmo ServiciosC
+	Definir con1 Como Real
+	Definir tari1 Como Real
+	Definir total1 Como Real
+	
+	Definir con2 Como Real
+	Definir tari2 Como Real
+	Definir total2 Como Real
+	
+	Definir con3 Como Real
+	Definir tari3 Como Real
+	Definir total3 Como Real
+	
+	Definir totalpagar Como Real
+	//
+	Escribir "Cual es el consumo del servicio 1 correspondiente al agua :"
+	Leer con1
+	Escribir "Cual es la tarifa del agua :"
+	Leer tari1
+	
+	Escribir "Cual es el consumo del servicio 1 correspondiente a la luz :"
+	Leer con2
+	Escribir "Cual es la tarifa de la luz :"
+	Leer tari2
+	
+	Escribir "Cual es el consumo del servicio 1 correspondiente al gas :"
+	Leer con3
+	Escribir "Cual es la tarifa del gas :"
+	Leer tari3
+	//
+	total1<- con1*tari1
+	total2<- con2*tari2
+	total3<- con3*tari3
+	
+	totalpagar<- total1+total2+total3
+	//
+	Escribir "El precio a pagar del agua es de :" total1
+	Escribir "El precio a pagar por la luz es de :" total2
+	Escribir "El precio a pagar por el gas es de :" total3
+	Escribir "El precio total a pagar por los servicios es de :" totalpagar
+FinAlgoritmo

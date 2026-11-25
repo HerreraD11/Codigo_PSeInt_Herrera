@@ -1,0 +1,49 @@
+Algoritmo Tienda
+	Definir precio Como Real
+	Definir producto Como Caracter
+	Definir ventas Como Entero
+	Definir total Como Real
+	Definir subtotal Como Real
+	Definir cantidad Como Entero
+	Definir NVentas Como Entero
+	Definir num Como Entero
+	//
+	lista<-""
+	NVentas<-0
+	subtotal<-0
+	total<-0
+	num<-0
+	//
+	Escribir "Ingrese la cantidad de productos diferentes que compraras:"
+	Leer ventas
+	//
+	si ventas < 0 Entonces
+		Escribir "Error: ingresa una cantidad positiva"
+	SiNo
+		Para i <- 1 Hasta ventas Hacer
+			Escribir "Ingrese el nombre del producto:"
+			Leer producto
+			Escribir "Ingrese el precio del producto:"
+			Leer precio
+			Escribir "Ingrese la contidad de este producto:"
+			Leer cantidad
+			
+			subtotal<- precio * cantidad
+			total<- total + subtotal
+			
+			NVentas<- NVentas+cantidad
+			
+			num<- num +1
+			
+			lista<- lista + "N° :" + ConvertirATexto(num) + ", Nombre :" + producto + ", Precio :" + ConvertirATexto(precio) + ", Cantidad :" + ConvertirATexto(cantidad) +"//"
+			
+			
+		FinPara
+	FinSi
+	Escribir "RESUMEN DE VENTAS"
+	Escribir lista
+	Escribir ""
+	Escribir "Numero total de productos vendidor:" NVentas
+	Escribir "precio total de la compra :" total
+	Escribir "Gracias por su compra"
+FinAlgoritmo

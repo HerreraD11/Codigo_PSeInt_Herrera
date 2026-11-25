@@ -1,0 +1,14 @@
+Algoritmo CostoImpre
+	Definir paginas Como Entero
+	definir costo Como Real
+	Definir preciIMP Como Real
+	//
+	Escribir "¿Cuantas paginas desea imprimir? :"
+	Leer paginas
+	Escribir "¿Cual es el costo por pagiana imprimida? :"
+	Leer costo
+	//
+	preciIMP<- paginas*costo
+	//
+	Escribir "El precio a pagar por la imprecion que solicita es de :" preciIMP
+FinAlgoritmo

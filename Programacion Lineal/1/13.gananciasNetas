@@ -1,0 +1,14 @@
+Algoritmo GasGan
+	Definir gastos Como Real
+	Definir ingresor Como Real
+	Definir ganancias Como Real
+	//
+	Escribir "Ingrese sus gastos :"
+	Leer gastos
+	Escribir "Ingrese sus ingresor :"
+	Leer ingresor
+	//
+	ganancias<- ingresor - gastos
+	//
+	Escribir "Sus ganancias netas son de :" ganancias
+FinAlgoritmo

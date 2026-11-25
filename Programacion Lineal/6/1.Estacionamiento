@@ -1,0 +1,25 @@
+Algoritmo Estacionamiento
+	Definir Ncarros Como Entero
+	Definir placa Como Caracter
+	Definir hora Como Caracter
+	Definir carro Como Entero
+	
+	listaCarros<- ""
+	carro<-0
+	
+	Escribir "Ingrese el numero de carrios que desea ingresar al parqueadero: "
+	Leer Ncarros
+	
+	para Ncarros <- 1 Hasta Ncarros Con Paso 1 Hacer
+		Escribir "Ingrese la placa: (WQO40C)"
+		Leer placa
+		Escribir "Ingrese la hora de ingreso: (20:30)"
+		Leer hora
+		carro<- carro + 1
+		
+		listaCarros<- listaCarros + "Carro numero :" + ConvertirATexto(carro) + ", Placa :" + placa + ", Hora de entrada: " + hora +" "+"/"
+	FinPara
+	
+	Escribir listaCarros
+	
+FinAlgoritmo

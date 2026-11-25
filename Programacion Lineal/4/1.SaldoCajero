@@ -1,0 +1,21 @@
+Algoritmo SaldoCajero
+	Definir saldo Como Real
+	Definir retiro Como Real
+	//Definir el dinero del cajero
+	saldo<- 5000000
+	//
+	Mientras saldo > 0 Hacer
+		Escribir "El saldo actual del cajro es de :#$", saldo
+		Escribir "Ingrese la cantidad que desea retirar :&"
+		Leer retiro
+		si retiro > 0 y retiro <= saldo Entonces
+			saldo <- saldo - retiro
+			Escribir "====Retiro exitorso===="
+			Escribir "Saldo restante en el cajero :$", saldo
+		SiNo
+			Escribir "Error, el retiro ingresado no puede ser procesado"
+			Escribir "El retiro debe ser positivo y menor al saldo del cajero" 			
+		FinSi
+	FinMientras
+	Escribir "No queda saldo disponible en el cajero"
+FinAlgoritmo

@@ -1,0 +1,45 @@
+Algoritmo Factura
+	Definir cliente Como Caracter
+	Definir producto Como Caracter
+	Definir tipoCliente Como Caracter
+	Definir estudiante Como Logico
+	Definir cantidad Como Entero
+	Definir precio Como Real
+	Definir subtotal Como Real
+	Definir impuesto Como Real
+	Definir total Como Real
+	//Datos
+	Escribir "Nombre de cliente :"
+	Leer cliente
+	Escribir "Producto comprado :"
+	Leer producto
+	Escribir "Cantidad comprada :"
+	Leer cantidad
+	Escribir "Precio de producto :"
+	Leer precio
+	Escribir "Es un estudiante (Verdadero/Falso) :"
+	Leer estudiante
+	Escribir "Que tipo de cliente es (A,B,C) :"
+	Leer tipoCliente
+	
+	subtotal <- cantidad * precio
+	
+	Si estudiante = Verdadero Entonces
+		impuesto <- subtotal * 0.05
+	Sino
+		impuesto <- subtotal * 0.13
+	FinSi
+	//Factura
+	total <- subtotal + impuesto
+	Escribir ">>>>>>>>>> FACTURA <<<<<<<<<<"
+	Escribir "| Cliente: ", cliente
+	Escribir "| Producto: ", producto
+	Escribir "| Tipo de cliente: ", tipoCliente
+	Escribir "| Es estudiante: ", estudiante
+	Escribir "| Cantidad: ", cantidad
+	Escribir "| Precio unitario: $", precio 
+	Escribir "| Subtotal: $", subtotal      
+	Escribir "| Impuesto: $", impuesto      
+	Escribir "| Total a pagar: $", total    
+	Escribir ">>>>>>>>>>>>>>><<<<<<<<<<<<<<<"
+FinAlgoritmo

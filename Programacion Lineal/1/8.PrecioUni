@@ -1,0 +1,21 @@
+Algoritmo PrecioUni
+	
+	Definir precio Como Real
+	Definir cantidad Como Real
+	Definir subtotal Como Real
+	Definir iva  Como Real
+	Definir total Como Real
+	//Articulos
+    Escribir "Ingrese el precio unitario: "
+    Leer precio
+    Escribir "Ingrese la cantidad: "
+    Leer cantidad
+	//Precio con iva
+    subtotal <- precio * cantidad
+    iva <- subtotal * 0.19
+	total <- subtotal + iva
+	//tot 
+	
+	Escribir "El precio total de su compra es de: " total
+	
+FinAlgoritmo

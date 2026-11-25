@@ -1,0 +1,18 @@
+Algoritmo PorDescuento
+	Definir precio Como Real
+	Definir porcentaje Como Real
+	Definir descuento Como Real
+	Definir final Como Real
+	
+    Escribir "Ingrese el precio de la compra:"
+    Leer precio
+    Escribir "Ingrese el descuento en porcentaje:"
+    Leer porcentaje
+	
+    descuento <- precio * porcentaje / 100
+    final <- precio - descuento
+	
+    Escribir "Descuento aplicado: ", descuento
+    Escribir "Precio final: ", final
+	
+FinAlgoritmo

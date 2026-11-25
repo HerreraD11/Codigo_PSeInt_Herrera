@@ -1,0 +1,15 @@
+Algoritmo arearectan
+	Definir area Como Real
+	Definir base Como Real
+	Definir altura Como Real
+	//Datos
+	Escribir "Ingrese la base de su rectangulo :"
+	Leer base
+	Escribir "Ingresar la altura de su rectangulo :"
+	Leer altura
+	// formula
+	area<- base * altura
+	//solucion
+	Escribir "El area de su rectangulo es de ." area
+	
+FinAlgoritmo

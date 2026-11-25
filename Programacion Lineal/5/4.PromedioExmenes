@@ -1,0 +1,36 @@
+Algoritmo PromedioExmenes
+	Definir notas Como Real
+	Definir calcular Como Entero
+	matematicas<-0
+	lengua <-0
+	sociales<-0
+	naturales<-0
+	ingles<-0
+	
+	Repetir
+		Escribir "Accion deseada"
+		Escribir "1. Calcular el promedio de las notas obtenidas en examenes."
+		escribir "2. Finalizar programa."
+		Escribir "Seleccione que opcion desea hacer:"
+		Leer calcular
+		
+		Segun calcular Hacer
+			1: escribir "Ingresa la nota optenida en matematicas:"
+				Leer matematicas
+				escribir "Ingresa la nota optenida en lengua:"
+				Leer lengua
+				escribir "Ingresa la nota optenida en sociales:"
+				Leer sociales
+				escribir "Ingresa la nota optenida en naturales:"
+				Leer naturales
+				escribir "Ingresa la nota optenida en ingles:"
+				Leer ingles
+				
+				notas<- (matematicas + lengua + sociales + naturales + ingles) / 5
+				Escribir "Su promedio de nota es:" notas
+				
+			2: Escribir "Deseo que el programa haya sido de tu agrado, adios."
+		FinSegun
+		
+	Hasta Que calcular=2
+FinAlgoritmo

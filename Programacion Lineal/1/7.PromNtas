@@ -1,0 +1,22 @@
+Algoritmo PromNtas
+	//datos
+	Definir not1 Como Entero
+	Definir not2 Como Entero
+	Definir not3 Como Entero
+	Definir promedio Como Entero
+	// pedir notas
+	Escribir "Agregar nota 1 "
+	leer not1
+	Escribir "Agragar nota 2 "
+	Leer not2
+	Escribir "Agragar nota 3 "
+	Leer not3
+	// formula
+	promedio<- (not1 + not2 + not3)/3
+	
+	//Solucion
+	Escribir "El promedio de las notas es :" ConvertirATexto(promedio);
+	
+	
+	
+FinAlgoritmo

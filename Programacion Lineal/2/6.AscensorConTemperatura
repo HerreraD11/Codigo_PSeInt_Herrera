@@ -1,0 +1,22 @@
+Algoritmo AscensorConTemperatura
+    Definir temperatura Como Real
+    Definir piso Como Entero
+	
+    Escribir "Ingrese la temperatura actual:"
+    Leer temperatura
+	
+    Escribir "Ingrese el piso deseado (1-10):"
+    Leer piso
+	
+    Si temperatura >= 16 Y temperatura <= 26 Entonces
+        Si piso >= 1 Y piso <= 10 Entonces
+            Escribir "Temperatura adecuada"
+            Escribir "El ascensor se mueve al piso ", piso
+        Sino
+            Escribir "Error: piso no valido"
+        FinSi
+    Sino
+        Escribir "Temperatura no adecuada"
+        Escribir "El ascensor no puede moverse"
+    FinSi
+FinAlgoritmo

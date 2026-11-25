@@ -1,0 +1,46 @@
+Algoritmo Clasificacion
+	Definir resultado Como Entero
+	Definir local Como Entero
+	Definir visitante Como Entero
+	//
+	Escribir "RESULTADOS POSIBLES"
+	Escribir "1. Gano el local."
+	Escribir "2. Gano el vsisitante."
+	Escribir "3. Empate."
+	Escribir "Seleccione el resultado: "
+	Leer resultado
+	//
+	Segun resultado Hacer
+		1:
+			local<-3
+		2:
+			visitante<-3
+		3:
+			local<-1
+			visitante<-1
+		De Otro Modo:
+			Escribir "resultado no valido"
+	FinSegun
+	//
+	si resultado = 1 Entonces
+		Escribir "CLASIFICACION ACTUAL"
+		Escribir "Primer lugar visitante con :" local
+		Escribir "Segundo lugar visitante con :" visitante
+	SiNo
+		si resultado = 2 Entonces
+			Escribir "CLASIFICACION ACTUAL"
+			Escribir "Primer lugar visitante con :" visitante
+			Escribir "Segundo lugar visitante con :" local
+		SiNo
+			si resultado = 3 Entonces
+				Escribir "CLASIFICACION ACTUAL"
+				Escribir "Ninguno de los equipos esta por encima de otro."
+				Escribir "Puntos visitante :" visitante
+				Escribir "Puntos local :" local
+			FinSi
+		FinSi
+	FinSi
+
+	
+	
+FinAlgoritmo

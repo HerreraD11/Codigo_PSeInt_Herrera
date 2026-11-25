@@ -1,0 +1,29 @@
+Algoritmo TiendaOnline
+	Definir Ncompras Como Entero
+	Definir producto Como Caracter
+	Definir precio Como Real
+	Definir compra Como Entero
+	Definir total Como Real
+	//
+	compra<-0
+	listacompra<-""
+	//
+	Escribir "¿Cuantos productos desea adquirir el dia de hoy?"
+	Leer Ncompras
+	//
+	Para Ncompras <- 1 Hasta Ncompras Con Paso 1 Hacer
+		Escribir "Ingrese el nombre del producto: "
+		Leer producto
+		Escribir "Ingrese el precio del producto: "
+		Leer precio
+		
+		total<- total + precio
+		
+		compra<- compra+1
+		
+		listacompra<- listacompra + "Numero de compra :" + ConvertirATexto(compra) + ", Nombre del producto :" + producto + ", Precio del producto :" + ConvertirATexto(precio) + " /" 
+	FinPara
+	Escribir "COMPRA EN TIENDA ONLINE"
+	Escribir "Resumen de la compra :" listacompra
+	Escribir "El valor total es :" total
+FinAlgoritmo

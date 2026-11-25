@@ -1,0 +1,24 @@
+Algoritmo GestorTareas
+	Definir accion Como Caracter
+	Definir lista Como Caracter
+	Definir Actividades Como Caracter
+	Definir descripcion Como Caracter
+	Definir fechaV Como Caracter
+	//
+	lista<- ""
+	accion<- "S"
+	//
+	Repetir
+		Escribir "Ingrese el nomnre de su actividad:"
+		Leer Actividades
+		Escribir "Ingrese la descripcion de su actividad:"
+		Leer descripcion
+		Escribir "Ingrese la fecha final de la entrega de su actividad: (Dia/Mes/Año)"
+		Leer fechaV
+		lista <- lista + "Nombre de Actividad :"+Actividades+", Descripcion :"+descripcion+", Fecha limite :"+fechaV+"/"
+		Escribir "Deseas agragar otra tareas :"
+		Leer accion
+	Hasta Que accion = "N"
+	Escribir "Estas son tus tareas agregadas :", lista
+	Escribir "Gracias por ordenar tus tareas con este programa, adios."
+FinAlgoritmo

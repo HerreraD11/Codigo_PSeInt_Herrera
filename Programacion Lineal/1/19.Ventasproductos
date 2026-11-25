@@ -1,0 +1,38 @@
+Algoritmo Ventasproductos
+	Definir canti1 Como Entero
+	Definir precio1 Como Real
+	Definir total1 Como Real
+	
+	Definir canti2 Como Entero
+	Definir precio2 Como Real
+	Definir total2 Como Real
+	
+	Definir canti3 Como Entero
+	Definir precio3 Como Real
+	Definir total3 Como Real
+	
+	Definir Totalpagar Como Real
+	//
+	Escribir "Cantidad vendida del producto 1: "
+	Leer canti1
+	Escribir "Precio unitario del producto 1 :"
+	Leer precio1
+	
+	Escribir "Cantidad vendida del producto 2: "
+	Leer canti2
+	Escribir "Precio unitario del producto 2 :"
+	Leer precio2
+	
+	Escribir "Cantidad vendida del producto 3: "
+	Leer canti3
+	Escribir "Precio unitario del producto 3 :"
+	Leer precio3
+	//
+	total1<- canti1*precio1
+	total2<- canti2*precio2
+	total3<- canti3*precio3
+	
+	Totalpagar<- total1 + total2 + total3
+	//
+	Escribir "El valor total a pagar es de :" Totalpagar
+FinAlgoritmo

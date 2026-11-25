@@ -1,0 +1,25 @@
+Algoritmo Contactos
+	Definir nombre Como Caracter
+	Definir telefono Como Entero
+	Definir contacto Como Entero
+	Definir lista Como Caracter
+	//
+	contacto<-0
+	NuContacto<-0
+	//
+	Escribir "Ingrese cuantos contactos desea agregar :"
+	Leer contacto
+	//
+	Para contacto <- 1 Hasta contacto Con Paso 1 Hacer
+		Escribir "Ingresa el nombre con el que guardaras tu contacto :"
+		Leer nombre
+		Escribir "Ingresa el numero de telefono de tu contacto :"
+		Leer telefono
+		
+		NuContacto<- NuContacto+1
+		lista<- lista + "Contactu numero :" + ConvertirATexto(NuContacto) + ", Nombre de Contacto :"+ nombre +", Numero de telefono :" + ConvertirATexto(telefono)+ " " + "/"
+		
+	FinPara
+	Escribir "RESUMEN DE CONTACTOS"
+	Escribir lista
+FinAlgoritmo

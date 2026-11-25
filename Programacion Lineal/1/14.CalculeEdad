@@ -1,0 +1,26 @@
+Algoritmo CalculeEdad
+	Definir naci1 Como Entero
+	Definir naci2 Como Entero
+	Definir naci3 Como Entero
+	Definir actual Como Entero
+	Definir edad1 Como Entero
+	Definir edad2 Como Entero
+	Definir edad3 Como Entero
+	//
+	Escribir "¿Cual es el año actual?"
+	leer actual
+	Escribir "Cual es el año de nacimiento de la persona numero 1 "
+	Leer naci1
+	Escribir "Cual es el año de nacimiento de la persona numero 2 "
+	Leer naci2
+	Escribir "Cual es el año de nacimiento de la persona numero 3 "
+	Leer naci3
+	//
+	edad1<- actual - naci1
+	edad2<- actual - naci2
+	edad3<- actual - naci3
+	//
+	Escribir "Edad de la persona 1 :" edad1
+	Escribir "Edad de la persona 2 :" edad2
+	Escribir "Edad de la persona 3 :" edad3
+FinAlgoritmo

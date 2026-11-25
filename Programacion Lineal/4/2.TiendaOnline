@@ -1,0 +1,29 @@
+Algoritmo TiendaOnline
+	Definir precio Como Real
+	Definir subtotal Como Real
+	Definir cantidad Como Entero
+	Definir Ncompra Como Caracter
+	Definir total Como Real
+	//
+	total <-0
+	Mascompra<- "SI"
+	
+	Mientras Mascompra = "SI" Hacer
+		Escribir "Ingrese el precio del producto: $"
+		Leer precio
+		Escribir "Ingrese la cantidad de este producto: "
+		Leer cantidad
+		
+		si precio > 0 y cantidad > 0 Entonces
+			subtotal<- precio * cantidad
+			total<- total + subtotal
+			Escribir "El precio de su compra es de: $", subtotal
+		SiNo
+			Escribir "Ingrese un precio y cantidad que sean positivos."
+		FinSi
+		
+		Escribir "Desea agregar otro producto a su carro online (SI-NO)"
+		Leer Mascompra
+	FinMientras
+	Escribir "El costo total de la compra es: $", total
+FinAlgoritmo

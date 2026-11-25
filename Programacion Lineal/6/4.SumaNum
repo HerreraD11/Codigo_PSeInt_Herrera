@@ -1,0 +1,23 @@
+Algoritmo SumaNum
+	Definir n Como Entero
+	Definir suma Como Real
+	Definir numer Como Real
+	
+	suma<- 0
+	
+	Escribir "Ingrese la cantidad de numeros que desea sumar :";
+	Leer n
+	
+	si n > 0 Entonces
+		Para i <- 1 Hasta n Hacer
+        Escribir "Ingrese un numero:";
+        Leer numer
+		
+        suma <- suma + numer
+		
+    FinPara
+	Escribir "La suma de sus numeros es :" suma;
+SiNo
+	Escribir "Ingrese una cantidad positiva."
+FinSi
+FinAlgoritmo

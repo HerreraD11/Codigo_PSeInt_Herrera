@@ -1,0 +1,24 @@
+Algoritmo ViajeCarro
+	Definir distancia Como Real
+	Definir velocidad Como Real
+	Definir tiempo Como Real
+	Definir viaje Como Caracter
+	//
+	viaje<- "Si"
+	//
+	Mientras viaje = "Si" Hacer
+		Escribir "Ingrese la distancia total del viaje(Km)"
+		Leer distancia
+		Escribir "Ingrese la velocidad promedio del coche(Km/h)"
+		Leer velocidad
+		si distancia > 0 y velocidad > 0 Entonces
+			tiempo<- distancia / velocidad
+		SiNo
+			Escribir "Asegurese de que la distancia y velocidad sean positivos"
+		FinSi
+		Escribir "El tiempo estimado de su viaje es de :", tiempo ,"horas"
+		Escribir "¿Desea calculas otro viaje? (Si/No)"
+		Leer viaje
+	FinMientras
+	Escribir "Que tenga un buen viaje, adios"
+FinAlgoritmo

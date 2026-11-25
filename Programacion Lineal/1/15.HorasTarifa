@@ -1,0 +1,15 @@
+Algoritmo HorasTarifa
+	Definir total Como Real
+	Definir horas Como Entero
+	definir tarifa Como Real
+	//
+	Escribir "Ingrese las horas trabajadas :"
+	Leer horas
+	Escribir "Ingresar la tarifa por horas :"
+	Leer tarifa
+	//
+	total<- tarifa * horas
+	//
+	Escribir "El costo total por las hora de trabajo es de :" total
+	
+FinAlgoritmo

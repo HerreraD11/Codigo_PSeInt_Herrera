@@ -1,0 +1,20 @@
+Algoritmo Ascensorpeso
+	Definir peso Como Real
+    Definir piso Como Entero
+	
+    Escribir "Ingrese su peso total en kg: "
+    Leer peso
+	
+    Escribir "Ingrese el piso deseado (1-10): "
+    Leer piso
+	
+    Si peso > 0 Y peso <= 200 Entonces
+        Si piso >= 1 Y piso <= 10 Entonces
+            Escribir "El ascensor se mueve al piso ", piso " Correctamente."
+        Sino
+            Escribir "Error: piso no valido"
+        FinSi
+    Sino
+        Escribir "Ascensor sobrecargado o peso no valido"
+    FinSi
+FinAlgoritmo

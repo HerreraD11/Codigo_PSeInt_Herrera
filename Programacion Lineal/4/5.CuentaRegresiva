@@ -1,0 +1,16 @@
+Algoritmo CuentaRegresiva
+	Definir Numer Como Entero
+	
+	Escribir "Ingrese el numero de la cuenta regresiva"
+	Leer Numer
+	
+	Mientras Numer > 0 Hacer
+		Numer <- (Numer - 1)
+		Escribir Numer
+		si Numer = 0 Entonces
+			Escribir "¡Tiempo cumplido!"
+			
+		FinSi
+	FinMientras
+	
+FinAlgoritmo

@@ -1,0 +1,50 @@
+Algoritmo Tienda
+	Definir Tipo Como Entero
+	Definir Cantidad Como Entero
+	Definir Descuento Como Real
+	Definir Precio Como Real
+	Definir ValorDescuento Como Real
+	Definir Subtotal Como Real
+	Definir Total Como Real
+	//
+	Escribir "1-A ALIMENTOS: 1000"
+	Escribir "2-V VESTIMENTA: 3000"
+	Escribir "3-E ELECTRONICA: 5000"
+	//
+	Escribir "Ingrese el tipo de producto que esta comprando (1,2,3):";
+	Leer Tipo
+	Escribir "Ingrese la cantidad que esta comprando de ese Producto: ";
+	Leer Cantidad
+	
+	Si Cantidad > 0 Entonces
+		
+		Segun tipo hacer
+		caso 1 :
+			Precio<- 1000 
+			Descuento<- 0.10
+		Caso 2 :
+			Precio<- 3000
+			Descuento<- 0.05
+		Caso 3 :
+			Precio<- 5000
+			Descuento<- 0
+		De Otro Modo:
+			Escribir "Tipo de producto inexistente"
+			Precio<- 0
+			Descuento<- 0
+	FinSegun
+	si Precio > 0 Entonces
+		Subtotal<- Precio * Cantidad
+		ValorDescuento<- Subtotal * Descuento
+		Total<- Subtotal - ValorDescuento
+		
+		Escribir "El total de su compra sin Descuento es de :", Subtotal
+		Escribir "El total de su descuento es de :", ValorDescuento
+		Escribir "El valor total de su compra aplicando los Descuento es de :", Total
+		
+	FinSi
+sino 
+	Escribir "Error en la compra"
+FinSi
+
+FinAlgoritmo

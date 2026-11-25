@@ -1,0 +1,18 @@
+Algoritmo TViaje
+	Definir tim1 Como Entero
+	Definir tim2 Como Entero
+	Definir tim3 Como Entero
+	Definir Tiempototal Como Entero
+	//
+	Escribir "De cuanto fue el primer lapso de tiempo en horas :"
+	Leer tim1
+	Escribir "De cuanto fue el segundo lapso de tiempo en horas :"
+	Leer tim2
+	Escribir "De cuanto fue el tercer lapso de tiempo en horas :"
+	Leer tim3
+	//
+	Tiempototal<- tim1 + tim2 + tim3
+	//
+	Escribir "El tiempo total del viaje fue de :" Tiempototal " horas"
+	
+FinAlgoritmo

@@ -1,0 +1,23 @@
+Algoritmo VelocidadC
+	Definir distan1 Como Real
+	Definir tiem1 Como Real
+	definir veloci1 Como Real
+	Definir distan2 Como Real
+	Definir tiem2 Como Real
+	definir veloci2 Como Real
+	//
+	Escribir "Cual fue la distancia del carro n°1 en kilometros :"
+	Leer distan1
+	Escribir "Cual fue el tiempo del carro n°1 en horas :"
+	Leer tiem1
+	Escribir "Cual fue la distancia del carro n°2 en kilometros :"
+	Leer distan2
+	Escribir "Cual fue el tiempo del carro n°2 en horas :"
+	Leer tiem2
+	//
+	veloci1<- distan1/tiem1
+	veloci2<- distan2/tiem2
+	//
+	Escribir "Velocidad del carro n°1 : " veloci1 " Km/h"
+	Escribir "Velocidad del carro n°2 : " veloci2 " Km/h"
+FinAlgoritmo

@@ -1,0 +1,14 @@
+Algoritmo ascensor
+		Definir piso Como Entero
+		
+		Escribir "Ingrese el piso al que desea ir (1-10):"
+		Leer piso
+		
+		Si piso >= 1 Entonces
+			si piso <= 10 Entonces
+				Escribir  "Nos dirigimos al piso " piso
+			SiNo
+				Escribir "El piso " piso " al que desea ir no existe"
+			FinSi
+		FinSi
+FinAlgoritmo

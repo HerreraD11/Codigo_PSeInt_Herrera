@@ -1,0 +1,13 @@
+Algoritmo GradosTemperatura
+	Definir temperatura Como Real
+	//
+	Repetir
+		Escribir "Ingrese la temperatura actual :"
+		Leer temperatura
+		si temperatura <= 18 o temperatura >= 25 Entonces
+			Escribir "Error, La temperatura esta por fuera de los limites recomendados"
+		SiNo
+			Escribir "Felicitaciones su temperatura de :" temperatura "° , esta dentro de los limites recomendados"
+			FinSi
+	Hasta Que temperatura > 18 y temperatura < 25 
+FinAlgoritmo
